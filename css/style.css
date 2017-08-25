@@ -200,6 +200,7 @@ textarea.form-control{
 
 /* MAIN STYLE START */
 .inner{
+	position: relative;
     padding-top: 71px;
     background-color: #000;
     height: 100vh;
@@ -263,7 +264,7 @@ textarea.form-control{
 @media (max-width: 991px){
 	.inner-content h6{
 		font-size: 22px;
-		margin-bottom: 50px;
+		margin-bottom: 15px;
 	}
 }
 
