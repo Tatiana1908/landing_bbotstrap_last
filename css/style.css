@@ -152,6 +152,7 @@ textarea.form-control{
 
 /* HEADER STYLE START */
 .header{
+	z-index: 999;
 	background-color: #000;
 	position:absolute;
     top:0;
@@ -233,10 +234,10 @@ textarea.form-control{
     color: #5f5f5f;
 }
 .control-down{
-	position: absolute;
 	left:0;
 	right: 0;
 	bottom: 35px;
+	position: absolute;
 }
 .control-down::before{
 	content:'';
