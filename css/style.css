@@ -73,8 +73,8 @@ blockquote{
 	font-size: 24px;
 	color: #777;
 	line-height: 1.6;
-
 }
+
 blockquote span{
 	font-size: 15px;
 	font-weight: 400;
@@ -102,7 +102,9 @@ blockquote span{
 	color: #fff;
 	background-color: #323232;
 }
-
+.btn.btn-dark:hover{
+	background-color: #525252;
+}
 .btn.btn-xs{
 	margin-top: 25px;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -146,6 +148,29 @@ textarea.form-control{
 	}
 	.title{
 		margin-bottom: 30px;
+	}
+}
+@media (max-width: 479px){
+	.title{
+		font-size: 14px;
+	}
+	blockquote{
+		font-size: 14px;
+	}
+	blockquote span{
+		font-size: 10px;
+	}
+	.btn{
+		letter-spacing: .2em;
+		padding:10px 10px;
+		font-size: 11px;
+	}
+	.btn.btn-xs{
+		font-size: 9px;
+
+	}
+	.small-section{
+		padding: 20px 0;
 	}
 }
 /* DEFAULT COMPONENTS STYLE END */
@@ -196,6 +221,20 @@ textarea.form-control{
 	.container-fluid>.navbar-collapse{
 		margin: 0;
 	}
+}
+@media (max-width: 479px){
+	.header-nav li{
+		padding: 0 50px;
+		font-size: 10px;
+		line-height: 35px;
+	}
+	.default-section{
+		padding: 50px 0;
+}
+	.small-section{
+		padding: 50px 0 30px 0;
+	}
+	
 }
 /* HEADER STYLE END */
 
@@ -268,8 +307,30 @@ textarea.form-control{
 		margin-bottom: 15px;
 	}
 }
-
-
+@media (max-width: 768px){
+	.inner-content h6{
+		font-size: 20px;
+		 letter-spacing: 1.2em;
+	}
+}
+@media (max-width: 599px){
+	.inner-content h6{
+		font-size: 16px;
+		letter-spacing: 1em;
+	}
+}
+@media (max-width: 479px){
+	.inner{
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+	.inner-content h6{
+		font-size: 13px;
+	}
+	.inner-content span{
+		font-size: 15px;
+	}
+}
 /* ABOUT STUDIO START */
 .our-team{
 	margin-top: 100px;
@@ -293,11 +354,10 @@ textarea.form-control{
 }
 .team-item-info span.team-item-role{
 	font-size: 12px;
-	
 }
 .team-item-skills{
-	opacity:0;
-	position:absolute;
+	opacity: 0;
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -319,8 +379,27 @@ textarea.form-control{
 		margin-top: 50px;
 	}
 }
-
-
+@media(max-width: 599px){
+	.our-team{
+	margin-top: 20px;
+	}
+}
+@media (max-width: 479px){
+	.team-item-img img{
+		height: 150px;
+		margin-top: 10px;
+	}
+	.about-studio .text-section p{
+		font-size: 11px;
+		line-height: 20px;
+	}
+	.team-item-info span.team-item-name{
+		font-size: 10px;
+	}
+	.team-item-info span.team-item-role{
+		font-size: 8px;
+	}
+}
 /* SERVICES START */
 
 .nav-tabs{
@@ -373,11 +452,39 @@ textarea.form-control{
 		letter-spacing: .1em;
 
 	}
-	.tab-content .tab-pane{
+	.tab-content .tabpanel{
 		padding-top: 22px;	
 	}
 }
-
+@media (max-width: 599px){
+	.nav-tabs li .icon{
+		font-size: 28px;
+	}
+	.nav-tabs li .tablist-title{
+		font-size: 10px;
+	}
+	.tab-content blockquote{
+		font-size: 15px;
+	}
+}
+@media (max-width: 479px){
+	.serviсes-tabs .nav-tabs>li{
+	width: 33.3%;
+	}
+	.nav-tabs li .tablist-title{
+		margin-bottom: 30px;
+	}
+	.tab-content .tab-pane{
+		padding-top: 0;
+	}
+	.tab-content blockquote{
+		font-size: 13px;
+	}
+	.tab-content p{
+		font-size: 11px;
+		line-height: 20px;
+	}
+}
 /* SERVICES END */
 
 /* LETS TALK START */
@@ -401,8 +508,21 @@ textarea.form-control{
 }
 @media(max-width: 768px){
 	.lets-talk-content{
-	margin: 70px 0;
+		margin: 70px 0;
+	}
+	.lets-talk-content .title{
+		letter-spacing: .3em;
+		font-size: 15px;
+	}
 }
+@media (max-width: 479px){
+	.lets-talk .title{
+		letter-spacing: 0.15em;
+		font-size: 12px;
+	}
+	.lets-talk-content p{
+		font-size: 12px;
+	}
 }
 /* LETS TALK END */
 
@@ -445,7 +565,30 @@ textarea.form-control{
 .img-section img{
 	padding: 4px;
 }
-
+@media (max-width:991px){
+	.portfolio-tabs .nav-tabs li+li{
+		margin-left: 30px;
+	}
+}
+@media (max-width: 599px){
+	.portfolio-tabs .nav-tabs>li{
+		letter-spacing: 0.2em;
+		padding-top: 0px;
+	}
+}
+@media (max-width: 479px){
+	.portfolio .portfolio-content>p{
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.portfolio-tabs .nav-tabs>li{
+		font-size: 10px;
+		margin-bottom: 10px;
+	}
+	.portfolio-tabs .nav-tabs li+li{
+	margin-left: 20px;
+}
+}
 /* PORTFOLIO END */
 
 /* START PROJECT */
@@ -529,13 +672,11 @@ textarea.form-control{
 	font-size: 32px;
 	margin-bottom: 20px;
 }
-@media (min-width: 768px){
-	.carousel-indicators{
-		bottom: -45%;
-	}
-}
 .main{
 	overflow-x:hidden;
+}
+.carousel-indicators{
+	bottom: -20%;
 }
 .carousel-indicators li{
 	width: 9px;
@@ -588,7 +729,22 @@ textarea.form-control{
 	left: auto;
 	right: 20px;
 }
-
+@media(max-width: 479px){
+	.reviews .carousel-caption p{
+		font-size: 14px;
+	}
+	.carousel-control::before{
+		width: 65px;
+		height: 65px;
+	}
+	.carousel-control i.fa{
+		left:10px;
+	}
+	.carousel-control.right i.fa{
+		left: auto;
+		right: 10px;
+	}
+}
 /* REVIEWS END */
 
 /* LATEST NEWS START */
@@ -624,6 +780,40 @@ textarea.form-control{
 	float: right;
 	font-size: 11px;
 	color: #999;
+	line-height: 22px;
+}
+@media (max-width:991px){
+	.news .title{
+		font-size: 15px;
+	}
+}
+@media (max-width: 599px){
+	.news .title a{
+		line-height: 18px;
+		letter-spacing: 0.4em;
+	}
+	.news-text h6{
+		font-size: 13px;
+	}
+	.news-text span{
+		letter-spacing: 0.2em;
+		font-size: 9px;
+	}
+	.news-text p{
+		margin-top: 20px;
+		line-height: 20px;
+		font-size: 12px;
+	}
+}
+@media(max-width: 479px){
+	.news .title{
+		font-size: 13px;
+		letter-spacing: 0.2em;
+	}
+	.news .title a{
+		letter-spacing: 0.2em;
+		line-height: 15px;
+	}
 }
 /* LATEST NEWS END */
 
@@ -646,7 +836,6 @@ textarea.form-control{
 	width:35px;
 }
 .font-icon::before{
-	
 	position: absolute;
 	content: '';
 	height: 25px;
@@ -683,11 +872,66 @@ textarea.form-control{
 .contact-us textarea{
 	margin-bottom: 20px;
 }
-
+.form-col{
+	width: 50%;
+	padding: 0 5px;
+	float: left;
+}
+.form-submit{
+	clear: both;
+}
 @media (max-width: 991px){
 	.contact-text{
 		padding-left: 15px;
 	}
+}
+@media (max-width:768px){
+	.contact-text span{
+		font-size: 12px;
+	}
+	.contact-text{
+		padding-left: 0px;
+	}
+	.font-icon{
+		height: 20px;
+		width:30px;
+	}
+	.font-icon::before{
+		height: 20px;
+		width: 20px;
+	}
+	.font-icon i.fa{
+		font-size: 12px;
+	}
+	.contact-us .contact-info{
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 599px){
+	.contact-text{
+		
+		margin-top: 10px;
+	}
+	.contact-us .title{
+		margin-bottom: 40px;
+	}
+}
+@media(max-width: 479px){
+	.contact-text h6{
+		font-size: 11px;
+		letter-spacing: .1em;
+	}
+	.contact-text span{
+		line-height: 14px;
+		font-size: 12px;
+	}
+	.contact-us input{
+		font-size: 9px;
+	}
+	.contact-us textarea{
+		font-size: 9px;
+	}
+
 }
 /* SUBSCRIBE START */
 
@@ -700,20 +944,28 @@ textarea.form-control{
 .subscribe .form-group{
 	margin-right: 3px;
 }
-.form-col{
-	width: 50%;
-	padding: 0 5px;
-	float: left;
-}
-.form-submit{
-	clear: both;
-}
+
 .contact-us textarea{
 	margin-bottom: 20px;
 }
-@media (max-width: 991px){
-
+@media (max-width: 768px){
+	.subscribe .btn,
+	.subscribe .info{
+		float:left;
+	}
 }
+@media(max-width:479px){
+	.subscribe.small-section{
+		padding: 0;
+	}
+	.subscribe .title{
+		font-size: 11px;
+	}
+	.subscribe input[name="email"]{
+	font-size: 11px;
+}
+}
+
 /* SUBSCRIBE END */
 
 /* CONTACTS END */
@@ -805,8 +1057,7 @@ textarea.form-control{
 /* FOOTER END */
 
 /* MAIN STYLE END */
-@media(min-width: 768px){}
-@media(min-width: 1024px){}
+
 
 
 
