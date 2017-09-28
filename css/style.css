@@ -63,7 +63,7 @@ button{
 	color:#fff;
 }
 .title.text-light{
-	font-weight: 300px;
+	font-weight: 300;
 	letter-spacing: .3em;
 }
 blockquote{
@@ -150,6 +150,11 @@ textarea.form-control{
 		margin-bottom: 30px;
 	}
 }
+@media(max-width: 599px){
+	.btn{
+		padding:10px 30px;
+	}
+}
 @media (max-width: 479px){
 	.title{
 		font-size: 14px;
@@ -162,8 +167,8 @@ textarea.form-control{
 	}
 	.btn{
 		letter-spacing: .2em;
-		padding:10px 10px;
-		font-size: 11px;
+		padding:10px 20px;
+		font-size: 12px;
 	}
 	.btn.btn-xs{
 		font-size: 9px;
@@ -186,7 +191,7 @@ textarea.form-control{
     padding:0 0px;
 }
 .logo{
-	padding: 25px 30px;
+	padding: 25px 12px;
 	float:left;
 }
 .header-nav{
@@ -221,6 +226,7 @@ textarea.form-control{
 	}
 	.logo{
 	padding: 20px;
+	}
 }
 @media (max-width: 479px){
 	.header-nav li{
@@ -230,11 +236,10 @@ textarea.form-control{
 	}
 	.default-section{
 		padding: 50px 0;
-}
+	}
 	.small-section{
 		padding: 50px 0 30px 0;
 	}
-	
 }
 /* HEADER STYLE END */
 
@@ -273,11 +278,12 @@ textarea.form-control{
     color: #5f5f5f;
 }
 .control-down{
+	position: absolute;
 	left:0;
 	right: 0;
 	bottom: 35px;
-	position: absolute;
 }
+
 .control-down::before{
 	content:'';
 	display: block;
@@ -329,6 +335,7 @@ textarea.form-control{
 	}
 	.inner-content span{
 		font-size: 15px;
+		line-height: 20px;
 	}
 }
 /* ABOUT STUDIO START */
@@ -368,9 +375,12 @@ textarea.form-control{
 	opacity: 1;
 }
 @media (max-width: 768px){
+	.team-item-img{
+	margin-top: 40px;
+	}
 	.team-item-img img{
-		margin-top: 40px;
 		width: 100%;
+		height: 300px;
 	}
 	.our-team{
 		margin-top: 50px;
@@ -394,6 +404,12 @@ textarea.form-control{
 	}
 	.team-item-info span.team-item-role{
 		font-size: 8px;
+	}
+	.our-team{
+		margin-top: -20px;
+	}
+	.team-item-img img{
+		height: 200px;
 	}
 }
 /* SERVICES START */
@@ -440,7 +456,7 @@ textarea.form-control{
 	font-size: 48px;
 }
 .tab-content .tab-pane{
-	padding-top: 70px;
+	padding-top: 50px;
 }
 
 @media(max-width:991px){
@@ -456,7 +472,7 @@ textarea.form-control{
 }
 @media(max-width:768px){
 	.serviсes-tabs .nav-tabs>li{
-	width: 33.3%;
+		width: 28%;
 	}
 	.nav-tabs li .tablist-title{
 		margin-bottom: 40px;
@@ -469,19 +485,17 @@ textarea.form-control{
 	.serviсes-tabs .nav-tabs>li{
 		width: 50%;
 	}
-
-	.tab-content blockquote{
-		font-size: 15px;
-	}
 }
 @media (max-width: 479px){
-		.nav-tabs li .icon{
+	.nav-tabs li .icon{
 		font-size: 38px;
+	}
+	.tab-content blockquote{
+		font-size: 15px;
 	}
 	.nav-tabs li .tablist-title{
 		font-size: 12px;
 	}
-
 	.tab-content blockquote{
 		font-size: 13px;
 	}
@@ -552,7 +566,7 @@ textarea.form-control{
 } 
 .portfolio-tabs .nav-tabs>li{
 	font-size: 13px;
-	padding-top: 40px;
+	margin-top: 80px;
 }
 .portfolio-tabs .nav-tabs li+li{
 	margin-left: 60px;
@@ -572,12 +586,19 @@ textarea.form-control{
 .img-section img{
 	width: 100%;
 }
-@media (max-width:768px){
+@media (max-width: 768px){
+	.portfolio .portfolio-col{
+		max-width: 50%;
+	}
 	.portfolio-tabs .nav-tabs>li{
 		margin-bottom: 20px;
 	}
 }
 @media (max-width: 599px){
+	.portfolio .portfolio-col{
+		max-width: 100%;
+		padding: 8px;
+	}
 	.portfolio-tabs .nav-tabs{
 		padding-top: 20px;
 	} 
@@ -589,9 +610,6 @@ textarea.form-control{
 	}
 	.portfolio-tabs .nav-tabs li+li{
 		margin-left: 0px;
-}
-	.portfolio-col{
-		max-width:50%;
 	}
 }
 @media (max-width: 479px){
@@ -608,10 +626,6 @@ textarea.form-control{
 		margin-top: 10px;
 		width: 100%;
 		text-align: left;
-	}
-	.portfolio-col{
-		padding: 8px;
-		max-width:100%;
 	}
 }
 /* PORTFOLIO END */
@@ -753,9 +767,9 @@ textarea.form-control{
 	left: auto;
 	right: 20px;
 }
-@media(max-width: px){
+@media(max-width: 768px){
 	.reviews .carousel-caption p{
-		width:100%;
+		margin: 20px;
 	}
 }
 @media(max-width: 479px){
@@ -863,18 +877,32 @@ textarea.form-control{
 	margin-right: 3px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
+	.subscribe .title{
+		margin-bottom: 40px;
+		font-size: 16px;
+	}
+	.subscribe .form-group{
+		display: inline-block;
+	}
+	
+}
+@media (max-width: 599px){
+	.subscribe .form-group, .subscribe input[name="email"]{
+		width: 100%;
+	}
+}
+@media(max-width:479px){
 	.subscribe input[name="email"]{
 		margin: auto;
 		width:100% ;
 	}
-}
-@media(max-width:479px){
 	.subscribe.small-section{
-		padding: 0;
+		padding: 20px 0;
 	}
 	.subscribe .title{
-		font-size: 11px;
+		font-size: 12px;
+		line-height: 20px;
 	}
 	.subscribe input[name="email"]{
 	font-size: 11px;
@@ -920,17 +948,13 @@ textarea.form-control{
 	text-transform: uppercase;
 	margin-bottom: 5px;
 }
-.contact-text span.contact-describe{
+.contact-text span.contact-describtion{
 	line-height: 24px;
 	font-size: 15px;
 }
 .contact-us form{
 	margin: 0 -5px;
 }
-.contact-us textarea{
-	margin-bottom: 20px;
-}
-
 .contact-us textarea{
 	margin-bottom: 20px;
 }
@@ -962,13 +986,8 @@ textarea.form-control{
 	.form-col{
 		width: 100%;
 	}
-}
-@media (max-width: 599px){
-	.contact-text{
-		margin-top: 10px;
-	}
-	.contact-us .title{
-		margin-bottom: 40px;
+	.form-submit .form-col{
+		width: 50%;
 	}
 }
 @media(max-width: 479px){
@@ -977,8 +996,13 @@ textarea.form-control{
 	}
 	.contact-us textarea{
 		font-size: 9px;
+		margin-bottom: 0;
 	}
-
+	.form-submit .form-col{
+		width: 100%;
+		text-align: left;
+		margin-top: 20px;
+	}
 }
 
 
@@ -1048,7 +1072,11 @@ textarea.form-control{
 	letter-spacing: .3em;
 	font-size: 16px;
 }
-
+@media(max-width:479px){
+	.map iframe{
+	height: 300px;
+	}
+}
 /* FOOTER START */
 .footer{
 	padding-top: 140px;
@@ -1078,7 +1106,7 @@ textarea.form-control{
 	margin-right: 10px;
 	color: #a8a8a8;
 }
-span.footer-describtion{
+span.footer-description{
 	font-size: 11px;
 	font-family: "Dosis";
 	line-height: 24px;
